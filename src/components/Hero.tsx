@@ -1,21 +1,24 @@
-export default function Hero() {
+import Image from 'next/image'
+
+export default function HeroSection() {
   return (
-    <section className="relative h-[654px] bg-gray-50 bg-[url('/images/home-banner-1.png')] bg-cover bg-center py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center gap-12 lg:w-[540px] lg:grid-cols-2">
-          {/* Content */}
-          <div>
-            <p className="mb-6 text-base leading-tight font-bold text-white lg:text-lg">
-              EMS Contracting
-            </p>
-            <h1 className="mb-6 text-4xl leading-tight font-bold text-gray-900 lg:text-5xl">
-              Delivering first-class commercial maintenance nation wide 24/7
-            </h1>
-            <button className="rounded-md bg-[#E48E33] px-8 py-3 font-medium text-white hover:bg-orange-600">
-              Make an Inquiry
-            </button>
-          </div>
-        </div>
+    <section className="relative h-[654px] py-20">
+      {/* Background image with priority loading */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/home-banner-1.png"
+          alt="Home Banner"
+          layout="fill" // Take up the whole section
+          objectFit="cover"
+          objectPosition="center"
+          priority // Mark the image for preloading
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 text-center text-white">
+        <h1 className="text-4xl font-bold">Welcome to Our Site!</h1>
+        <p className="mt-4">Your success starts here.</p>
       </div>
     </section>
   )

@@ -16,7 +16,7 @@ export default function About() {
           <div>
             <h2 className="mb-6 text-3xl font-bold text-gray-900">Welcome To EMS Contracting</h2>
             <p className="mb-6 leading-relaxed text-gray-600">
-              EMS Contracting is one of the UK's leading commercial maintenance contractors. We
+              EMS Contracting is one of the UK&apos;s leading commercial maintenance contractors. We
               provide a comprehensive range of services to businesses across the nation, ensuring
               your facilities operate at peak efficiency 24/7. Our experienced team delivers quality
               workmanship and reliable service you can trust.

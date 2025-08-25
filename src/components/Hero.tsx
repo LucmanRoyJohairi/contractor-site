@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="relative h-[654px] bg-gray-50 bg-[url('/images/home-banner-1.png')] bg-cover bg-center py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center gap-12 sm:w-[540px] lg:grid-cols-2">
+        <div className="flex items-center justify-center gap-12 lg:w-[540px] lg:grid-cols-2">
           {/* Content */}
           <div>
             <p className="mb-6 text-base leading-tight font-bold text-white lg:text-lg">

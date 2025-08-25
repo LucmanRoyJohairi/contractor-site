@@ -37,7 +37,8 @@ export default function Testimonials() {
                   <Star key={i} className="h-5 w-5 fill-current text-yellow-400" />
                 ))}
               </div>
-              <p className="mb-6 text-gray-600 italic">"{testimonial.text}"</p>
+              <p className="mb-6 text-gray-600 italic">&quot;{testimonial.text}&quot;</p>
+
               <div className="border-t pt-4">
                 <p className="font-semibold">{testimonial.author}</p>
                 <p className="text-sm text-gray-500">{testimonial.company}</p>
